@@ -19,6 +19,12 @@ a:hover {
   color: #00bcd4;
 }
 
+.nav-links a.active {
+  font-weight: bold;
+  color: #00e5ff;
+  border-bottom: 2px solid #00e5ff;
+}
+
 /* === HEADER === */
 header {
   background: #000;
@@ -46,6 +52,12 @@ header {
 
 .nav-links a {
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff;
 }
 
 /* === HERO SECTION === */
