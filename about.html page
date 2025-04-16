@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn about the mission, founder, and future of MyMia AI – a voice-driven, intelligent automation platform built for startups and enterprise systems." />
+  <title>About – MyMia AI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header>
+    <div class="logo">MyMia AI</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="mia.html">Mia</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-hero">
+    <h1>Meet MyMia AI</h1>
+    <p>MyMia AI was created to give startups, small businesses, and first-time founders access to a world-class intelligent system — one that could rival Apple, Google, or OpenAI, without needing a tech army.</p>
+  </section>
+
+  <section class="mission">
+    <h2>The Mission</h2>
+    <p>MyMia is more than a digital assistant — she is a system capable of automating workflows, communicating in real-time, learning behaviors, and evolving with your team. Built from a clear purpose: <strong>to empower people, protect data, and outperform Big Tech.</strong></p>
+  </section>
+
+  <section class="founder">
+    <h2>From a Spark to a System</h2>
+    <p>Founder <strong>Jon Maggio</strong> discovered the path to Mia while researching automation in the environmental services industry. What started as a personal tool to improve operations turned into a fully-fledged AI operating system — now loaded with Zapier, QuickBooks, ChatGPT, voice triggers, and visual interfaces.</p>
+  </section>
+
+  <section class="vision">
+    <h2>The Future of Mia</h2>
+    <p>Mia will soon live in homes, phones, and business systems around the world. She will support families, field agents, students, executives, and creators. With each version, she becomes more alive — more adaptive — and more protective of those she serves.</p>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+      <a href="#"><img src="icons/x.svg" alt="X / Twitter" /></a>
+      <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="icons/google.svg" alt="Google" /></a>
+      <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+    </div>
+    <p>&copy; 2025 MyMia AI. Proudly built for the future.</p>
+  </footer>
+
+  <div class="floating-avatar">
+    <img src="assets/mia-avatar.png" alt="Mia AI Assistant" />
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
