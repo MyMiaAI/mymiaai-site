@@ -1,6 +1,8 @@
 /* === BASE STYLES === */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;500&display=swap');
+
 body {
-  font-family: 'Sora', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #0a0a0a;
   color: #e0f7fa;
   margin: 0;
@@ -42,6 +44,7 @@ header {
   font-size: 1.8rem;
   font-weight: bold;
   color: #00e5ff;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .nav-links {
@@ -65,18 +68,35 @@ header {
   text-align: center;
   padding: 6rem 2rem;
   background: linear-gradient(to right, #0a0a0a, #001f3f);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .hero h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
   color: #00e5ff;
+  position: relative;
+  z-index: 2;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .hero p {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto 2rem;
+  position: relative;
+  z-index: 2;
 }
 
 .cta-button {
@@ -87,6 +107,8 @@ header {
   border-radius: 6px;
   font-weight: bold;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .cta-button:hover {
@@ -112,7 +134,14 @@ header {
   max-width: 320px;
   text-align: center;
   box-shadow: 0 0 12px #00e5ff33;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.feature-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .feature-card:hover {
@@ -152,6 +181,38 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background: #00e5ff;
   transform: scale(1.03);
+}
+
+/* === MIA CHAT BUBBLE === */
+#mia-chat-bubble {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  background: #00e5ff33;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 9999;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+#mia-chat-bubble img {
+  width: 48px;
+  border-radius: 50%;
+}
+
+#mia-chat-window {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  background: #111;
+  color: #00e5ff;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 280px;
+  box-shadow: 0 0 15px #00e5ff55;
+  display: none;
+  z-index: 9999;
 }
 
 /* === FOOTER === */
