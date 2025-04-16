@@ -1,4 +1,3 @@
-<!-- MyMia AI - Contact Page | Page 6 of 6 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +6,13 @@
   <meta name="description" content="Contact the MyMia AI team. Start your AI journey, schedule a demo, or get support for your automation and integration needs." />
   <title>Contact – MyMia AI</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;500&display=swap" />
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
   <header>
     <div class="logo">MyMia AI</div>
     <nav>
@@ -47,7 +50,6 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="mia.html">Mia</a>
       <a href="faq.html">FAQ</a>
     </div>
     <div class="social-icons">
@@ -60,10 +62,22 @@
     <p>&copy; 2025 MyMia AI. Let's build something intelligent.</p>
   </footer>
 
+  <!-- Mia Chat Bubble -->
+  <div id="mia-chat-bubble">
+    <img src="assets/mia-avatar.png" alt="Chat with Mia" />
+  </div>
+  <div id="mia-chat-window">
+    <p>Hi, I’m Mia. Ask me anything or click to connect your voice assistant.</p>
+  </div>
+
+  <!-- Floating Avatar -->
   <div class="floating-avatar">
     <img src="assets/mia-avatar.png" alt="Mia AI Assistant" />
   </div>
 
-  <script src="scripts.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="animation.js"></script>
+  <script src="mia-bubble.js"></script>
 </body>
 </html>
