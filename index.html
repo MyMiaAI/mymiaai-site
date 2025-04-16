@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyMia AI - Updated</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MyMia AI - Automation, ChatGPT, Zapier, QuickBooks integration for startups and IT teams.">
+  <meta name="keywords" content="MyMia AI, automation, Zapier, ChatGPT, QuickBooks, AI systems, workflow, NLP, API integration">
+  <title>MyMia AI – Build Smarter. Automate Faster.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <h1>Launching MyMia AI with polished design...</h1>
-  <!-- Placeholder content will be replaced below -->
+
+  <header>
+    <div class="logo">MyMia AI</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Build Smarter. Automate Faster.</h1>
+    <p>We help startups and IT teams deploy AI systems and automation workflows with confidence.</p>
+    <a href="#contact" class="cta-button">Start Your AI Project</a>
+  </section>
+
+  <section id="services" class="features">
+    <div class="feature-card">
+      <h3>AI Consulting</h3>
+      <p>We provide strategy and systems design to bring AI into your operations.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Workflow Automation</h3>
+      <p>Integrate tools like Zapier, QuickBooks, Sheets, and more to automate your business.</p>
+    </div>
+    <div class="feature-card">
+      <h3>API Integration</h3>
+      <p>Custom integrations with ChatGPT, OpenAI, Google, Twilio, and other platforms.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form name="Contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="Contact" />
+      <p hidden><label>Don’t fill this out if you're human: <input name="bot-field" /></label></p>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align: center; margin-top: 1rem;">We typically respond within 24 hours.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MyMia AI. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+      <a href="#"><img src="icons/x.svg" alt="Twitter / X" /></a>
+      <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="icons/google.svg" alt="Google" /></a>
+      <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+    </div>
+    <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+  </footer>
+
+  <div class="floating-avatar">
+    <img src="assets/mia-avatar.png" alt="Mia AI Assistant" />
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
