@@ -1,4 +1,3 @@
-<!-- MyMia AI - Services Page | Page 3 of 6 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +6,13 @@
   <meta name="description" content="Explore MyMia AI services including automation consulting, custom integrations, and intelligent workflow solutions for startups and IT leaders." />
   <title>Services – MyMia AI</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;500&display=swap" />
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
   <header>
     <div class="logo">MyMia AI</div>
     <nav>
@@ -30,23 +33,23 @@
   </section>
 
   <section class="services-grid">
-    <div class="service-card">
+    <div class="feature-card">
       <h3>AI Consulting</h3>
       <p>One-on-one expert sessions to plan your AI roadmap, integrations, and deployment architecture.</p>
     </div>
-    <div class="service-card">
+    <div class="feature-card">
       <h3>Workflow Automation</h3>
       <p>End-to-end business automation using Zapier, QuickBooks, Google Workspace, and custom triggers.</p>
     </div>
-    <div class="service-card">
+    <div class="feature-card">
       <h3>Natural Language Processing</h3>
       <p>Train, customize, and deploy intelligent NLP models for chatbots, summarization, and document understanding.</p>
     </div>
-    <div class="service-card">
+    <div class="feature-card">
       <h3>API Integration & Custom Logic</h3>
       <p>Custom backends, webhook systems, and secure API bridges using OpenAI, Twilio, Stripe, Google, and more.</p>
     </div>
-    <div class="service-card">
+    <div class="feature-card">
       <h3>MIA OS Setup</h3>
       <p>Launch your own secure, private version of MyMia AI with dashboard, face/voice engine, and live commands.</p>
     </div>
@@ -69,10 +72,22 @@
     <p>&copy; 2025 MyMia AI. Built for serious automation.</p>
   </footer>
 
+  <!-- Mia Chat Bubble -->
+  <div id="mia-chat-bubble">
+    <img src="assets/mia-avatar.png" alt="Chat with Mia" />
+  </div>
+  <div id="mia-chat-window">
+    <p>Hi, I’m Mia. Ask me anything or click to connect your voice assistant.</p>
+  </div>
+
+  <!-- Floating Avatar -->
   <div class="floating-avatar">
     <img src="assets/mia-avatar.png" alt="Mia AI Assistant" />
   </div>
 
-  <script src="scripts.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="animation.js"></script>
+  <script src="mia-bubble.js"></script>
 </body>
 </html>
