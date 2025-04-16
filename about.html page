@@ -6,9 +6,13 @@
   <meta name="description" content="Learn about the mission, founder, and future of MyMia AI – a voice-driven, intelligent automation platform built for startups and enterprise systems." />
   <title>About – MyMia AI</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;500&display=swap" />
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
   <header>
     <div class="logo">MyMia AI</div>
     <nav>
@@ -60,10 +64,22 @@
     <p>&copy; 2025 MyMia AI. Proudly built for the future.</p>
   </footer>
 
+  <!-- Mia Chat Bubble -->
+  <div id="mia-chat-bubble">
+    <img src="assets/mia-avatar.png" alt="Chat with Mia" />
+  </div>
+  <div id="mia-chat-window">
+    <p>Hi, I’m Mia. Ask me anything or click to connect your voice assistant.</p>
+  </div>
+
+  <!-- Floating Avatar -->
   <div class="floating-avatar">
     <img src="assets/mia-avatar.png" alt="Mia AI Assistant" />
   </div>
 
-  <script src="scripts.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script src="animation.js"></script>
+  <script src="mia-bubble.js"></script>
 </body>
 </html>
